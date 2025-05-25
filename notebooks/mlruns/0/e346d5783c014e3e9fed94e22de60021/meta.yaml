@@ -1,0 +1,15 @@
+artifact_uri: file:///e:/israa/ITI%209%20Months/MLOPS/Final%20Project/gesture-maze-research/notebooks/mlruns/0/e346d5783c014e3e9fed94e22de60021/artifacts
+end_time: 1748032147435
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e346d5783c014e3e9fed94e22de60021
+run_name: RandomForest
+run_uuid: e346d5783c014e3e9fed94e22de60021
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748032121123
+status: 3
+tags: []
+user_id: HP
