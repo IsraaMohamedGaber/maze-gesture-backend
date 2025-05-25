@@ -10,3 +10,5 @@ fastapi
 uvicorn
 scikit-learn
 pydantic
+pytest
+httpx
