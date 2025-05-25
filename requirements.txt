@@ -6,3 +6,7 @@ scikit-learn
 mediapipe
 opencv-python
 joblib
+fastapi
+uvicorn
+scikit-learn
+pydantic
