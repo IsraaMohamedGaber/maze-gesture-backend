@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Deploy to Railway
-        uses: railwayapp/cli-action@v1.2.9
+        uses: railwayapp/cli-action@v1.0.5
         with:
           railwayToken: ${{ secrets.RAILWAY_TOKEN  }}
           projectId: 7ba8d798-3a7c-43f9-b95e-b8f0447dcc45
