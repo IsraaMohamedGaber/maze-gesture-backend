@@ -16,6 +16,6 @@ jobs:
       - name: Deploy to Railway
         uses: railwayapp/cli-action@v1.2.9
         with:
-          railwayToken: ${{ secrets.55b2131c-86b5-4e9b-808b-3469351faa6c }}
+          railwayToken: ${{ secrets.RAILWAY_TOKEN  }}
           projectId: 7ba8d798-3a7c-43f9-b95e-b8f0447dcc45
 
