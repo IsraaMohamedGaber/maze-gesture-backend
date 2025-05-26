@@ -3,7 +3,7 @@ name: Deploy to Railway
 on:
   push:
     branches:
-      - main  # or your deployment branch
+      - main
 
 jobs:
   deploy:
@@ -13,9 +13,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy to Railway
-        uses: railwayapp/cli-action@v1.0.5
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          railwayToken: ${{ secrets.RAILWAY_TOKEN  }}
-          projectId: 7ba8d798-3a7c-43f9-b95e-b8f0447dcc45
+          node-version: '18'
 
+      - name: Install Railway CLI
+        run: npm install -g @railway/cli
+
+      - name: Deploy to Railway
+        run: railway up --detach
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+          RAILWAY_PROJECT_ID: 7ba8d798-3a7c-43f9-b95e-b8f0447dcc45
