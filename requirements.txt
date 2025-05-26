@@ -12,5 +12,6 @@ scikit-learn
 pydantic
 pytest
 httpx
+prometheus_fastapi_instrumentator
 
 

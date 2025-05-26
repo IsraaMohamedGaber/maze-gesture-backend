@@ -3,8 +3,12 @@ from pydantic import BaseModel
 from typing import List
 import joblib
 import numpy as np
+from prometheus_fastapi_instrumentator import Instrumentator
 
 app = FastAPI()
+
+# Add metrics instrumentation
+Instrumentator().instrument(app).expose(app)
 
 # Load model
 model = joblib.load("models/best_model.pkl")
