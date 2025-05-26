@@ -22,16 +22,25 @@ It uses a trained hand gesture recognition model to detect gestures like **left*
 
 maze-gesture-backend/
 │
+
 ├── app/
+
 │ ├── main.py # FastAPI application
+
 │ └── models/
+
 │ └── best_model.pkl # Trained model
 │
 ├── tests/
+
 │ └── test_api.py # Unit tests for the API
+
 │
+
 ├── requirements.txt # Python dependencies
+
 ├── Dockerfile # Docker image for the API
+
 └── README.md # You're here :)
 
 
