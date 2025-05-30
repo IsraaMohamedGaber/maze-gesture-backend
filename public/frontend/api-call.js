@@ -1,31 +1,29 @@
 const API_URL = "https://maze-gesture-backend-production.up.railway.app/predict";
 
 async function getPredictedLabel(processed_t) {
-  try {
-    // Check: processed_t must be an array of numbers
-    if (!Array.isArray(processed_t) || processed_t.some(isNaN)) {
-      console.error("Invalid input: processed_t must be an array of numbers.");
-      return null;
-    }
+  // Make sure processed_t is an array of 63 floats
+  if (!Array.isArray(processed_t) || processed_t.length !== 63 || !processed_t.every(n => typeof n === 'number')) {
+    console.error("Invalid input: processed_t must be an array of 63 numbers.");
+    return null;
+  }
 
+  try {
     const response = await fetch(API_URL, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({ landmarks: processed_t })  // Correct format for FastAPI backend
+      body: JSON.stringify({ landmarks: processed_t }),
     });
 
     if (!response.ok) {
-      const errorText = await response.text();
-      console.error("API error:", response.status, errorText);
+      console.error("Failed API response:", response.status);
       return null;
     }
 
     const data = await response.json();
     console.log("Predicted gesture:", data.gesture);
-    return data.gesture || null;
-
+    return data.gesture;  // expected: "up", "down", "left", "right"
   } catch (error) {
     console.error("Error calling prediction API:", error);
     return null;
