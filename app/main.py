@@ -5,8 +5,18 @@ import joblib
 import numpy as np
 from prometheus_fastapi_instrumentator import Instrumentator
 from prometheus_client import Counter
+from fastapi.middleware.cors import CORSMiddleware  
 
 app = FastAPI()
+
+#  Allow frontend requests (CORS)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins= ["http://127.0.0.1:5500"],  # In production, replace "*" with your frontend URL for security
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Add metrics instrumentation
 Instrumentator().instrument(app).expose(app)

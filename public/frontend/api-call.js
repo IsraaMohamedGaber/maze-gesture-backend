@@ -11,15 +11,15 @@ async function getPredictedLabel(processed_t) {
     });
 
     if (!response.ok) {
-      console.error("API response not OK:", response.statusText);
+      console.error("API error:", response.statusText);
       return null;
     }
 
     const data = await response.json();
-    console.log("Predicted label:", data.gesture);
+    console.log("Predicted gesture:", data.gesture);
     return data.gesture || null;
   } catch (error) {
-    console.error("Error calling API:", error);
+    console.error("Error calling prediction API:", error);
     return null;
   }
 }
