@@ -27,4 +27,4 @@ jobs:
       - name: Deploy to Railway
         run: railway up --detach --project ${{ secrets.7ba8d798-3a7c-43f9-b95e-b8f0447dcc45 }}
           
-          
+  
