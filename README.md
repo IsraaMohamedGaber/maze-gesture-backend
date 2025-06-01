@@ -172,4 +172,35 @@ Classes: "left", "right", "up", "down"
 gesture-maze-research: https://github.com/IsraaMohamedGaber/gesture-maze-research
 Backend: https://github.com/IsraaMohamedGaber/maze-gesture-backend
 
+---
+🕹️ How to Use the Game
+The game is controlled using your hand gestures via webcam input. The gestures are captured in real time and sent to the backend API, which classifies them into movement directions for the game.
 
+🔧 Requirements
+A webcam
+
+A modern browser (Chrome, Firefox, etc.)
+
+Ensure your backend is deployed and accessible from the frontend
+
+▶️ Steps
+Open the Game in the Browser
+Visit: https://israamohamedgaber.github.io/maze-gesture-backend/
+
+Allow Webcam Access
+When prompted, allow the site to access your webcam.
+
+Perform Gestures
+Use your hand to perform any of the recognized gestures listed below.
+
+Watch the Ball Move!
+The game will respond to your gesture predictions in real time.
+
+🤖 Gesture-to-Direction Mapping
+| Hand Sign  | Meaning | Action in Game |
+| ---------- | ------- | -------------- |
+| 👍 Like    | Up      | Move Up        |
+| 👎 Dislike | Down    | Move Down      |
+| ☝️ One     | Left    | Move Left      |
+| ✌️ Two Up  | Right   | Move Right     |
+These gestures are trained and mapped via label_mapping during model training. Make sure your dataset matches these labels.
