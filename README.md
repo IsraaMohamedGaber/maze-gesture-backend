@@ -204,4 +204,5 @@ The game will respond to your gesture predictions in real time.
 | 👎 Dislike | Down    | Move Down      |
 | ☝️ One     | Left    | Move Left      |
 | ✌️ Two Up  | Right   | Move Right     |
+
 These gestures are trained and mapped via label_mapping during model training. Make sure your dataset matches these labels.
