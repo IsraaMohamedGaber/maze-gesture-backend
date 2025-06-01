@@ -152,11 +152,13 @@ CI/CD via GitHub Actions (.github/workflows/railway-deploy.yml)
 Auto-deploys on push to main
 
 # Live API URL:
+
 🔗 https://maze-gesture-backend-production.up.railway.app/docs
 
 # 🌐 GitHub Pages (Frontend)
 Frontend Maze Game is integrated with this backend.
 📦 Live Game:
+
 👉 https://israamohamedgaber.github.io/maze-gesture-backend/
 
 🧠 Model Info
@@ -171,6 +173,7 @@ Classes: "left", "right", "up", "down"
 ---
 # 🔗 Repository
 gesture-maze-research: https://github.com/IsraaMohamedGaber/gesture-maze-research
+
 Backend: https://github.com/IsraaMohamedGaber/maze-gesture-backend
 
 ---
