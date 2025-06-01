@@ -5,14 +5,14 @@ This is the backend service for the Maze Gesture Final Project.
 It uses a trained hand gesture recognition model to detect gestures like **left**, **right**, **up**, and **down** from 21-point hand landmarks.
 
 ---
-🎮 Game Demo
+# 🎮 Game Demo
 Here’s a quick preview of the gesture-controlled maze game in action:
 
 https://github.com/user-attachments/assets/372a40a8-4bf6-42e3-9b04-1df90d3486c8
 
 ---
 
-📊 Grafana Monitoring Dashboard
+# 📊 Grafana Monitoring Dashboard
 This project includes monitoring via Prometheus and Grafana. Metrics such as prediction count, invalid inputs, and server usage are visualized.
 
 Sample Grafana Dashboard:
@@ -77,9 +77,9 @@ maze-gesture-backend/
 
 Start the server locally:
 
-```bash
 uvicorn app.main:app --reload
-
+ط
+ط
 Then open in browser:
 
 👉 http://localhost:8000/docs (Swagger UI)
@@ -107,7 +107,7 @@ pytest
 | Invalid input (bad length)   | ✅     |
 | Validation errors return 422 | ✅     |
 
-🐳 Docker Support
+# 🐳 Docker Support
 Build the image:
 docker build -t gesture-backend .
 Run the container:
@@ -151,10 +151,10 @@ CI/CD via GitHub Actions (.github/workflows/railway-deploy.yml)
 
 Auto-deploys on push to main
 
-Live API URL:
+# Live API URL:
 🔗 https://maze-gesture-backend-production.up.railway.app/docs
 
-🌐 GitHub Pages (Frontend)
+# 🌐 GitHub Pages (Frontend)
 Frontend Maze Game is integrated with this backend.
 📦 Live Game:
 👉 https://israamohamedgaber.github.io/maze-gesture-backend/
@@ -168,12 +168,13 @@ Features: 21 hand landmarks × 3 (x, y, z) = 63 floats
 
 Classes: "left", "right", "up", "down"
 
-🔗 Repository
+---
+# 🔗 Repository
 gesture-maze-research: https://github.com/IsraaMohamedGaber/gesture-maze-research
 Backend: https://github.com/IsraaMohamedGaber/maze-gesture-backend
 
 ---
-🕹️ How to Use the Game
+## 🕹️ How to Use the Game
 The game is controlled using your hand gestures via webcam input. The gestures are captured in real time and sent to the backend API, which classifies them into movement directions for the game.
 
 🔧 Requirements
