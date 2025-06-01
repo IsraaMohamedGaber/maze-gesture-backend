@@ -13,7 +13,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins= ["http://127.0.0.1:5500",
-                    "https://github.com/IsraaMohamedGaber/maze-gesture-backend"],  # In production, replace "*" with your frontend URL for security
+                    "https://israamohamedgaber.github.io"],  # In production, replace "*" with your frontend URL for security
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
