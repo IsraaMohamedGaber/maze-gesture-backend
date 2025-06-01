@@ -22,25 +22,21 @@ It uses a trained hand gesture recognition model to detect gestures like **left*
 
 maze-gesture-backend/
 │
-
 ├── app/
-
 │ ├── main.py # FastAPI application
-
 │ └── models/
-
 │ └── best_model.pkl # Trained model
 │
 ├── tests/
-
 │ └── test_api.py # Unit tests for the API
-
 │
-
-├── requirements.txt # Python dependencies
-
 ├── Dockerfile # Docker image for the API
-
+├── docker-compose.yml # App + Prometheus + Grafana
+├── prometheus.yml # Prometheus config
+├── Procfile # For Railway deployment
+├── requirements.txt # Python dependencies
+├── .github/workflows/
+│ └── railway-deploy.yml # CI/CD deployment workflow
 └── README.md # You're here :)
 
 
@@ -99,5 +95,51 @@ RandomForestClassifier
 
 Classes: left, right, up, down
 
+📈 Monitoring: Prometheus + Grafana
+Tracked Metrics
+
+| Metric Name              | Type           | Description                                        |
+| ------------------------ | -------------- | -------------------------------------------------- |
+| `model_prediction_total` | Model-related  | Total number of predictions made                   |
+| `invalid_input_total`    | Data-related   | Count of malformed/invalid inputs                  |
+| `http_requests_total`    | Server-related | Auto-exposed: tracks HTTP traffic by status/method |
+
+Prometheus & Grafana
+Launch with:
+
+docker-compose up --build
+
+Prometheus: http://localhost:9090
+
+Grafana: http://localhost:3000
+
+Grafana Dashboard imported using ID: 11074
+
+Railway
+CI/CD via GitHub Actions (.github/workflows/railway-deploy.yml)
+
+Auto-deploys on push to main
+
+Live API URL:
+🔗 https://maze-gesture-backend-production.up.railway.app/docs
+
+🌐 GitHub Pages (Frontend)
+Frontend Maze Game is integrated with this backend.
+📦 Live Game:
+👉 https://israamohamedgaber.github.io/
+
+🧠 Model Info
+Trained using scikit-learn==1.0.2
+
+Model: RandomForestClassifier
+
+Features: 21 hand landmarks × 3 (x, y, z) = 63 floats
+
+Classes: "left", "right", "up", "down"
+
+🔗 Repository
+Backend: maze-gesture-backend
+
+Frontend: maze-gesture-frontend (optional if separated)
 
 
