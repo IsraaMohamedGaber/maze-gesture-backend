@@ -189,7 +189,9 @@ Ensure your backend is deployed and accessible from the frontend
 
 ▶️ Steps
 Open the Game in the Browser
-Visit: https://israamohamedgaber.github.io/maze-gesture-backend/
+Visit: 
+
+https://israamohamedgaber.github.io/maze-gesture-backend/
 
 Allow Webcam Access
 When prompted, allow the site to access your webcam.
