@@ -5,7 +5,25 @@ This is the backend service for the Maze Gesture Final Project.
 It uses a trained hand gesture recognition model to detect gestures like **left**, **right**, **up**, and **down** from 21-point hand landmarks.
 
 ---
+🎮 Game Demo
+Here’s a quick preview of the gesture-controlled maze game in action:
 
+https://github.com/user-attachments/assets/372a40a8-4bf6-42e3-9b04-1df90d3486c8
+
+---
+
+📊 Grafana Monitoring Dashboard
+This project includes monitoring via Prometheus and Grafana. Metrics such as prediction count, invalid inputs, and server usage are visualized.
+
+Sample Grafana Dashboard:
+![Screenshot (314)](https://github.com/user-attachments/assets/5dc7131d-faa6-421d-a4af-2b9ae489e0a1)
+![Screenshot (315)](https://github.com/user-attachments/assets/8d1b2324-edca-4c0c-b246-412b574cc7c7)
+![Screenshot (316)](https://github.com/user-attachments/assets/0527435e-2651-4e4c-be3b-98a5d2300c9a)
+![Screenshot (317)](https://github.com/user-attachments/assets/3c7e337b-910f-406b-8c6a-a34554d803a6)
+![Screenshot (318)](https://github.com/user-attachments/assets/64c030b8-51e4-4f0f-afba-240f3d1091b5)
+![Screenshot (319)](https://github.com/user-attachments/assets/d8ef758a-dde2-49ae-8112-210c55fb40ed)
+
+---
 ## 🚀 Features Implemented
 
 | Feature                     | Status |
