@@ -175,6 +175,7 @@ Classes: "left", "right", "up", "down"
 gesture-maze-research: https://github.com/IsraaMohamedGaber/gesture-maze-research
 
 Backend: https://github.com/IsraaMohamedGaber/maze-gesture-backend
+Frontend: https://github.com/IsraaMohamedGaber/MLOPs-Final-Project
 
 ---
 ## 🕹️ How to Use the Game
