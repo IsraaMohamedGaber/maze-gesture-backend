@@ -22,18 +22,31 @@ It uses a trained hand gesture recognition model to detect gestures like **left*
 
 maze-gesture-backend/
 │
+
 ├── app/
+
 │ ├── main.py # FastAPI application
+
 │ └── models/
+
 │ └── best_model.pkl # Trained model
+
 │
+
 ├── tests/
+
 │ └── test_api.py # Unit tests for the API
+
 │
+
 ├── Dockerfile # Docker image for the API
+
 ├── docker-compose.yml # App + Prometheus + Grafana
+
 ├── prometheus.yml # Prometheus config
+
 ├── Procfile # For Railway deployment
+
 ├── requirements.txt # Python dependencies
 ├── .github/workflows/
 │ └── railway-deploy.yml # CI/CD deployment workflow
@@ -72,9 +85,9 @@ pytest
 ✅ Unit Test Coverage
 | Test                         | Status |
 | ---------------------------- | ------ |
-| Valid input (63 landmarks)   | ✅      |
-| Invalid input (bad length)   | ✅      |
-| Validation errors return 422 | ✅      |
+| Valid input (63 landmarks)   | ✅     | 
+| Invalid input (bad length)   | ✅     |
+| Validation errors return 422 | ✅     |
 
 🐳 Docker Support
 Build the image:
