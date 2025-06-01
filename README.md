@@ -84,7 +84,7 @@ docker run -p 8000:8000 gesture-backend
 
 Open:
 
-👉 http://localhost:8000/docs to test the API
+👉 https://mlops-final-project-production-2c88.up.railway.app/docs to test the API
 
  Model Info
 Trained using scikit-learn==1.0.2
@@ -126,7 +126,7 @@ Live API URL:
 🌐 GitHub Pages (Frontend)
 Frontend Maze Game is integrated with this backend.
 📦 Live Game:
-👉 https://israamohamedgaber.github.io/
+👉 https://israamohamedgaber.github.io/maze-gesture-backend/
 
 🧠 Model Info
 Trained using scikit-learn==1.0.2
@@ -138,8 +138,7 @@ Features: 21 hand landmarks × 3 (x, y, z) = 63 floats
 Classes: "left", "right", "up", "down"
 
 🔗 Repository
-Backend: maze-gesture-backend
-
-Frontend: maze-gesture-frontend (optional if separated)
+gesture-maze-research: https://github.com/IsraaMohamedGaber/gesture-maze-research
+Backend: https://github.com/IsraaMohamedGaber/maze-gesture-backend
 
 
